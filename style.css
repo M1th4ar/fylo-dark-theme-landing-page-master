@@ -225,6 +225,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 5rem;
+    padding: 7rem;
+    
 }
 .testimonials .container .card {
     background: var(--Dark-Blue-testimonials-background);
@@ -235,6 +237,55 @@ body {
 }
 .testimonials .container #quote {
     z-index: -1;
+    margin-top: -2.25rem;
+    margin-left: -0.5rem;
     position: absolute;
     
+}
+
+.testimonials .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.75rem 2rem 1.75rem 2rem;
+    
+}
+
+.testimonials .card p{
+    text-align: start;
+}
+
+.author {
+    display: flex;
+    justify-content: start;
+    margin-top: 1rem;
+    width: auto;
+    gap: 0.75rem;
+    
+}
+
+.testimonials .card .author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 1.25rem;
+}
+.testimonials .card .author .author-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: space-between;
+    
+    
+}
+
+.testimonials .card .author .author-text h2 {
+    color: var(--White);
+    font-size: 14px;
+    font-weight: var(--fw-700);
+}
+
+.testimonials .card .author .author-text p {
+    color: var(--White);
+    font-size: 10px;
+    font-weight: var(--fw-400);
 }
